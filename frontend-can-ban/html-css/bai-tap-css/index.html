@@ -6,59 +6,196 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        html {
+            font-family: 'Roboto', sans-serif;
+            background-color: grey;
+        }
+
+        body {
+            width: 50%;
+            background-color: white;
+            margin-left: 25%;
+            /* padding: top right bottom left */
+            padding: 30px 50px 30px 50px;
+            color: #3b454e;
+        }
+
+        h1 {
+            font-size: 300%;
+
+        }
+
+        h2 {
+            font-size: 100%;
+            color: #8999a7;
+            font-weight: 300;
+        }
+
+        h3 {
+            font-size: 200%;
+            border-top: 1px solid #E3E8EC;
+            padding-top: 40px;
+        }
+
+        li {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        code {
+            font-size: 16px;
+            background-color: whitesmoke;
+            padding: 2px;
+        }
+
+        div {
+            padding: 5px;
+            width: 100%;
+            background-color: whitesmoke;
+        }
+    </style>
 </head>
 
 <body>
-    <h1> Thuộc tính HTML</h1>
-    <h2> Trong bài này chúng ta sẽ tìm hiểu về thuộc tính của thẻ trong HTML và
+    <h1>Thuộc tính HTML</h1>
+    <h2>Trong bài này chúng ta sẽ tìm hiểu về thuộc tính của thẻ trong HTML và
         làm
         quen với một số thuộc tính cơ bản</h2>
-    <h3> Thuộc tính HTML là gì?</h3>
+    <h3>Thuộc tính HTML là gì?</h3>
+
+    <ul>
+        <li>Tất cả các phần tử HTML có
+            thể <strong>có nhiều thuộc
+                tính</strong></li>
+
+        <li>Các thuộc tính <strong>cung
+                cấp thông tin bổ
+                sung</strong> về các
+            phần tử</li>
+
+        <li>Các thuộc tính luôn được
+            <strong>chỉ định trong thẻ
+                bắt đầu</strong>
+        </li>
+
+
+        <li>Các thuộc tính được quy
+            định bằng các cặp tên / giá
+            trị như: <strong>name =
+                "value"</strong></li>
+    </ul>
+
+
+    <h3>Thuộc tính href</h3>
+
+    <p>thuộc tính <code>href</code> của
+        <code>&lt;a&gt;</code> quy định cụ thể
+        URL của trang liên kết đi vào khi click
+        vào thẻ
+    </p>
+
     <div>
-        <ul>
-            <li>Tất cả các phần tử HTML có thể có nhiều thuộc tính</li>
-            <li>Các thuộc tính cung cấp thông tin bổ sung về các phần tử</li>
-            <li> Các thuộc tính luôn được chỉ định trong thẻ bắt đầu</li>
-            <li> Các thuộc tính được quy định bằng các cặp tên / giá trị như:
-                name = "value"</li>
-        </ul>
+        <code>&lt;a href="https://quangkhoi1228.gitbook.io/"&gt;Quangkhoi1228&lt;/a&gt;
+      </code>
     </div>
 
-    <h3> Thuộc tính href</h3>
-    <p> thuộc tính href của <code><a> </code>quy định cụ thể URL của trang
-        liên
-        kết đi vào khi
-        click vào thẻ</p>
-    <a href="https://quangkhoi1228.gitbook.io/">Quangkhoi1228</a>
-    Thuộc tính src
-    Thuộc tính src của <img> quy định cụ thể đường dẫn đến hình ảnh sẽ được
-    hiển thị
-    <img src="img_girl.jpg">
-    Thuộc tính width và height
-    Thuộc tính width và height cung cấp thông tin kích thước cho hình ảnh
-    <img>
-    <img src="img_girl.jpg" width="500" height="600">
-    Thuộc tính alt
-    Thuộc tính alt của <img> cung cấp một văn bản thay thế cho hình ảnh
-    trong trường hợp không tải được ảnh hoặc những người sử dụng không thể
-    nhìn màn hình cùng có thể biết vị trí này thể hiện gì.
-    <img src="img_girl.jpg" alt="Girl with a jacket">
-    Thuộc tính style
-    Thuộc tính style được sử dụng để thêm phong cách cho một yếu tố, chẳng
-    hạn như màu sắc, font chữ, kích thước, và nhiều hơn nữa
-    <p style="color:red;">This is a red paragraph.</p>
-    Thuộc tính lang
-    Thuộc tính lang của <html> tuyên bố ngôn ngữ của trang web
-    <!DOCTYPE html>
-    <html lang="en">
 
-    <body>
-        ...
-    </body>
 
-    </html>
-    ​
-    *Xem thêm chi tiết các thuộc tính của HTML tại đây:
+    <h3>Thuộc tính src</h3>
+
+    <p>Thuộc tính <code>src</code> của
+        <code>&lt;img&gt;</code> quy định cụ thể
+        đường dẫn đến hình ảnh sẽ được hiển thị
+    </p>
+
+    <code>&lt;img
+        src="img_girl.jpg"&gt;</code>
+
+    <h3>Thuộc tính width và height</h3>
+
+    <p>Thuộc tính <code>width</code> và
+        <code>height</code> cung cấp thông tin
+        kích thước cho hình ảnh
+        <code>&lt;img&gt;</code>
+    </p>
+
+    <code>&lt;img src="img_girl.jpg"
+        width="500" height="600"&gt;
+    </code>
+
+    <h3>Thuộc tính alt</h3>
+
+    <p>Thuộc tính <code>alt</code> của
+        <code>&lt;img&gt;</code> cung cấp một
+        văn bản thay thế cho hình ảnh trong
+        trường hợp không tải được ảnh hoặc những
+        người sử dụng không thể nhìn màn hình
+        cùng có thể biết vị trí này thể hiện gì.
+    </p>
+
+    <code>&lt;img src="img_girl.jpg"
+        alt="Girl with a jacket"&gt;
+    </code>
+
+    <h3>Thuộc tính style</h3>
+
+    <p>Thuộc tính <code>style</code> được sử
+        dụng để thêm phong cách cho một yếu tố,
+        chẳng hạn như màu sắc, font chữ, kích
+        thước, và nhiều hơn nữa</p>
+
+    <code>&lt;p
+        style="color:red;"&gt;This
+        is a red
+        paragraph.&lt;/p&gt;</code>
+    </div>
+
+    <h3>Thuộc tính lang</h3>
+
+    <p>Thuộc tính lang của
+        <code>&lt;html&gt;</code> tuyên bố ngôn
+        ngữ của trang web
+    </p>
+
+    <div>
+        <code>
+
+        &lt;!DOCTYPE html&gt; 
+         
+            <div>&lt;html lang="en"&gt;
+            </div>
+        
+        <div>
+
+           &lt;body&gt; 
+        </div>
+        <div>
+
+            ... 
+        </div>
+        <div>
+
+            &lt;/body&gt; 
+        </div>
+        <div>
+
+            &lt;/html&gt; 
+        </div>
+    </code>
+    </div>
+
+    <p>*Xem thêm chi tiết các thuộc tính của
+        HTML tại đây: <a
+            href="https://www.w3schools.com/tags/ref_attributes.asp">https://www.w3schools.com/tags/ref_attributes.asp</a>
+
+    </p>
 </body>
 
 </html>
